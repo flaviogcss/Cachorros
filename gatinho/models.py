@@ -1,8 +1,7 @@
 from django.db import models
-
-# Create your models here.
 from dono.models import Dono
 
+# Create your models here.
 
 class Gatinho(models.Model):
     nome = models.CharField(max_length=255)

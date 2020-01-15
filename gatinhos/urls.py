@@ -21,7 +21,8 @@ import dono.urls
 import cachorros.urls 
 
 urlpatterns = [
-    
+
+    path('cachorro/', include('cachorros.urls')),
     path('', home),
     path('dono/', include('dono.urls')),
     path('detail/<int:id>', detail),
