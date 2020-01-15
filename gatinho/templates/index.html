@@ -21,6 +21,13 @@
     {% block body %}
     <section class="container">
         <h1>Cadastro de Gatinhos</h1>
+
+    {% if user.is_authenticated %}
+        <p>
+            ola {{user.username}}
+        </p>
+    {% endif %}
+    
         <form method="POST">
             {% csrf_token %}
             {{form.as_p}}
