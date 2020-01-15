@@ -24,7 +24,8 @@
 
     {% if user.is_authenticated %}
         <p>
-            ola {{user.username}}
+            ola {{user.username}} seja bem vindo!
+            <span><a href="{% url 'logout' %}">Sair</a></span>
         </p>
     {% endif %}
     
